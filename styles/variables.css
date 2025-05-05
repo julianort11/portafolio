@@ -1,0 +1,7 @@
+:root{
+    --example: #fff ;
+}
+@font-face {
+    font-family: "Example";
+    src: url(../assets/font/example.ttf);
+}
