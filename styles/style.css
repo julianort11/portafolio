@@ -4,3 +4,53 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  overflow: hidden; /* evita el scroll */
+}
+
+.main__div {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding-bottom: 300px; /* deja espacio para que no tape el contenido */
+}
+
+/************ wave animation ***************/
+.olas-auto {
+  background: red;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+[class^="ola__"] {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 100%;
+}
+
+.ola-mov {
+  width: 100%;
+  height: 105%;
+  object-fit: cover;
+  animation: deslizarOla 60s linear infinite;
+}
+
+@keyframes deslizarOla {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
