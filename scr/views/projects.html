@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="icon" type="image/jpeg" href="/assets/img/logoJulian.jpg">
     <script src="../js/projects.js"></script>
 </head>
+
 <body>
 
     <div class="contenedor">
@@ -17,83 +19,99 @@
                     <img src="/assets/img/gamecampus.png" alt="Imagen de la escena">
                 </div>
             </a>
-              <div class="card-content">
-              <h3>GameCampus</h3>
-              <p>Una plataforma web interactiva inspirada en Dungeons & Dragons, donde los usuarios pueden crear personajes de fantasía personalizables con razas, clases, habilidades y equipos únicos.</p>
-              <div class="card-navigation">
-                  <div>
-                      <span class="dot active-dot"></span>
-                      <span class="dot"></span>
-                      <!-- <span class="dot"></span> -->
-                  </div>
-                  <div class="buttons">
-                      <button onclick="nextCard()" class="next-button">&#8594; </button>
-                  </div>
+            <div class="card-content">
+                <h3>GameCampus</h3>
+                <p>Una plataforma web interactiva inspirada en Dungeons & Dragons, donde los usuarios pueden crear
+                    personajes de fantasía personalizables con razas, clases, habilidades y equipos únicos.</p>
+                <div class="card-navigation">
+                    <div>
+                        <span class="dot active-dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="nextCard()" class="next-button">&#8594; </button>
+                    </div>
                 </div>
-              </div>
-          </div>
-        
-        
-        
+            </div>
+        </div>
+
+
+
         <div class="card siguiente" id="card-2" ontouchstart="onTouchStart(event)" ontouchend="onTouchEnd(event)">
             <a href="https://github.com/julianort11/Conciertos-Conectados">
-                <div class="card-image" style="background-color: linear-gradient(135deg, rgba(0, 237, 252, 1) 0%, rgba(34, 34, 126, 1) 33%, rgba(117, 31, 139, 1) 66%);">
-                      <img src="/assets/img/findTrendig.png" alt="Imagen de la escena">
-                  </div>
-            </a>  
-              <div class="card-content"> 
-              <h3>Conciertos Conectados</h3>
-              <p>Mini proyecto de diseño responsive hecho con HTML y CSS. Simula una aplicación para descubrir conciertos, explorar categorías y ver detalles de eventos. Pensado para interfaces móviles, especialmente en iPhone vertical. </p>
-              <div class="card-navigation">
-                  <div>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <!-- <span class="dot"></span> -->
-                  </div>
-                  <div class="buttons">
-                      <button onclick="previousCard()"  class="previous-button">&#8592;</button>
-                      <!-- <button onclick="nextCard()"  class="next-button">&#8594; </button> -->
-                  </div>
+                <div class="card-image"style="background:linear-gradient(153deg, #91B5FD,#F0DDFF)">
+                    <img src="/assets/img/findTrendig.png" alt="Imagen de la escena">
                 </div>
-              </div>
-          </div>
-        
-        
-          <!-- <div 
-          class="card siguiente2" id="card-3" ontouchstart="onTouchStart(event)" ontouchend="onTouchEnd(event)">
-              <div class="card-image" style="background-color: rgb(255, 209, 103);">
-                  <img src="https://s5-onboarding-digital-angular.vercel.app/assets/meditation.svg" alt="Imagen de la escena">
-              </div>
-              <div class="card-content">
-              <h3>Conciertos Conectados</h3>
-              <p>Proin pellentesque, justo a ornare posuere, justo elit tincidunt mi, a efficitur tellus risus in elit. Aenean et neque metus. Morbi porta viverra tellus, non volutpat lectus tincidunt quis. </p>
-              <div class="card-navigation">
-                  <div>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </div>
-                  <div class="buttons">
-                      <button onclick="previousCard()"  class="previous-button">&#8592;</button>
-                  </div>
+            </a>
+            <div class="card-content">
+                <h3>Conciertos Conectados</h3>
+                <p>Mini proyecto de diseño responsive hecho con HTML y CSS. Simula una aplicación para descubrir
+                    conciertos, explorar categorías y ver detalles de eventos. Pensado para interfaces móviles,
+                    especialmente en iPhone vertical. </p>
+                <div class="card-navigation">
+                    <div>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="previousCard()" class="previous-button">&#8592;</button>
+                        <button onclick="nextCard()" class="next-button">&#8594; </button>
+                    </div>
                 </div>
-              </div>
-          </div>
-      
-          <div id="div-transparent-previous" class="ocultar" onclick="previousCard()"></div>
-          <div id="div-transparent-next" class="" onclick="nextCard()"></div> -->
-      </div>
+            </div>
+        </div>
+
+
+        <div class="card siguiente2" id="card-3" ontouchstart="onTouchStart(event)" ontouchend="onTouchEnd(event)">
+            <a href="https://github.com/julianort11/Echo">
+                <div class="card-image" style="background: linear-gradient(139deg, rgb(63, 94, 251) 0%, rgb(149, 83, 185) 41%, rgb(252, 70, 106) 100%);">
+                    <img src="/assets/img/echo.png" alt="Imagen de la escena">
+                </div>
+            </a>
+            <div class="card-content">
+                <h3>ECHO</h3>
+                <h4>en proceso</h4>
+                <p>
+                    Aplicación web en desarrollo para explorar música: permite buscar artistas, canciones y álbumes, ver
+                    lo más escuchado y guardar favoritos en el navegador. Construida con HTML, CSS y JavaScript, utiliza
+                    la API de Deezer y está diseñada de forma modular y responsive, enfocada en la práctica de
+                    integración de APIs y diseño de interfaces.
+                </p>
+                <div class="card-navigation">
+                    <div>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="previousCard()" class="previous-button">&#8592;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="div-transparent-previous" class="ocultar" onclick="previousCard()"></div>
+        <div id="div-transparent-next" class="" onclick="nextCard()"></div>
+    </div>
 
     <footer class="footer-nav">
         <nav class="nav">
             <ul class="nav-list">
-                <li><a href="/index.html"><img src="/assets/img/home_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="home"></a></li>
-                <li><a href="/scr/views/projects.html"><img src="/assets/img/library_books_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="projects"></a></li>
+                <li><a href="/index.html"><img src="/assets/img/home_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="home"></a></li>
+                <li><a href="/scr/views/projects.html"><img
+                            src="/assets/img/library_books_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="projects"></a></li>
                 <!-- <li><a href="#"><img src="/assets/img/icons8-linkedin.svg" alt="linkedin"></a></li> -->
-                <li><a href="https://www.instagram.com/ort_ga._/?hl=en"><img src="/assets/img/instagram-svgrepo-com (1).svg" alt="instagram"></a></li>
-                <li><a href="https://github.com/julianort11"><img src="/assets/img/github-mark-white.svg" alt="github"></a></li>
+                <li><a href="https://www.instagram.com/ort_ga._/?hl=en"><img
+                            src="/assets/img/instagram-svgrepo-com (1).svg" alt="instagram"></a></li>
+                <li><a href="https://github.com/julianort11"><img src="/assets/img/github-mark-white.svg"
+                            alt="github"></a></li>
             </ul>
         </nav>
     </footer>
 </body>
+
 </html>
