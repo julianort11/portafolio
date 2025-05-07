@@ -16,17 +16,18 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15%;
+  margin-top: 10%;
+  gap: 10px;
 }
 
 .intro__h1{
-  font-family: ;
+  font-family: "VariableFont_wght";
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
-  width: ;
+  color: var(--font-h1);
+  z-index: 1;
 }
 
 #changing-word {
@@ -37,9 +38,63 @@ body, html {
 }
 
 .intro__span{
-  background: red;
+  display: flex;
+  flex-direction: column;
+  font-family: "Exo2-Regular";
+  color: white;
   width: 50%;
   z-index: 1;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+}
+.intro__span img{
+  width: 40px;
+  border-radius: 15px;
+}
+/******************footer nav************************/
+.footer-nav {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(154, 153, 153, 0.768);
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-list li a {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(154, 153, 153, 0.768);
+  ;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #fffcfc;
+}
+
+.nav-list li img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
 }
 
 /************ wave animation ***************/
@@ -51,7 +106,6 @@ body, html {
   height: 29rem;
   overflow: hidden;
   pointer-events: none;
-  z-index: 0;
 }
 
 [class^="ola__"] {
@@ -72,3 +126,4 @@ body, html {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+/*******************************************/

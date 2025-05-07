@@ -1,7 +1,13 @@
 :root{
     --background: #030712;
+    --font-h1: #fff;
+    --nav-back: background: #7a7a7a; background: linear-gradient(180deg, rgba(122, 122, 122, 0.8) 0%, rgba(122, 122, 122, 0.8) 100%);
 }
 @font-face {
-    font-family: "Example";
-    src: url(../assets/font/example.ttf);
+    font-family: "VariableFont_wght";
+    src: url(../assets/font/Exo_2/Exo2-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Exo2-Regular";
+    src: url(../assets/font/Exo_2/static/Exo2-Regular.ttf);
 }
