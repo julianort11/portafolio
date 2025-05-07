@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projects</title>
+    <link rel="stylesheet" href="../../styles/projects-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-    
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/assets/img/gamecampus.png" alt="S"></div>
+            <div class="swiper-slide"><img src="images/slide2.jpg" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="images/slide3.jpg" alt="Slide 3"></div>
+        </div>
+        
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <footer class="footer-nav">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="/index.html"><img src="/assets/img/home_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="home"></a></li>
+                <li><a href="/scr/views/projects.html"><img src="/assets/img/library_books_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="projects"></a></li>
+                <!-- <li><a href="#"><img src="/assets/img/icons8-linkedin.svg" alt="linkedin"></a></li> -->
+                <li><a href="https://www.instagram.com/ort_ga._/?hl=en"><img src="/assets/img/instagram-svgrepo-com (1).svg" alt="instagram"></a></li>
+                <li><a href="https://github.com/julianort11"><img src="/assets/img/github-mark-white.svg" alt="github"></a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true, // Hacer que el carrusel sea infinito
+            autoplay: {
+                delay: 2500, // Avanzar automáticamente cada 2.5 segundos
+            },
+            navigation: {
+                nextEl: '.swiper-button-next', // Botón de siguiente
+                prevEl: '.swiper-button-prev', // Botón de anterior
+            },
+            pagination: {
+                el: '.swiper-pagination', // Puntos de navegación
+                clickable: true, // Permite que los puntos sean clickeables
+            },
+            effect: 'fade', // Efecto de desvanecimiento entre las diapositivas
+            spaceBetween: 30, // Espacio entre las diapositivas
+        });
+    </script>
+
 </body>
 </html>

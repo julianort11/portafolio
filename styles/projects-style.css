@@ -1,0 +1,58 @@
+@import url(variables.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+  background-color: var(--background);
+  height: 100%;
+  overflow: hidden; 
+  z-index: -1;
+}
+
+/*********************nav footer************************/
+.footer-nav {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(154, 153, 153, 0.768);
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    z-index: 10;
+}
+  
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+  
+.nav-list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+  
+.nav-list li a {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(154, 153, 153, 0.768);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+}
+  
+.nav-list li a:hover {
+    background-color: #fffcfc;
+}
+  
+.nav-list li img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+  }
+  
